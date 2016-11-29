@@ -6,8 +6,8 @@ library(rpart.plot)
 library(shiny)
 
 # Read in data
-setwd('~/Documents/info-201/m15-special-topics/demo-1')
-source('decision_tree.R')
+setwd('~/Desktop/m15-special-topics/demo-1')
+source('./decision_tree.R')
 shinyServer(function(input, output){
   # Use a reactive expression so that you only run the code once
   GetResults <- reactive ({
